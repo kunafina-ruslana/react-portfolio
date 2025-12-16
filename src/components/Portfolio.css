@@ -1,0 +1,104 @@
+#portfolio {
+  padding: 50px 10vw;
+}
+
+.portfolio_title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.portfolio_subtitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.project_card {
+  border-radius: 15px;
+  padding: 35px;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+
+.project_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.project_title {
+  margin: 0;
+  font-size: 24px;
+  flex: 1;
+}
+
+.project_status {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project_status.завершен {
+  border: 2px solid #d4edda;
+  color: #d4edda;
+}
+
+.project_status {
+  border: 2px solid #fff3cd;
+  color: #fff3cd;
+}
+
+.project_status.планируется {
+  border: 2px solid #d1ecf1;
+  color: #d1ecf1;
+}
+
+.project_description {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project_technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.technology_tag {
+    margin-top: 5px;
+  background-color: #201f1f;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.project_link {
+  display: inline-block;
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.project_link:hover {
+  color: #871515;
+  text-decoration: underline;
+}
