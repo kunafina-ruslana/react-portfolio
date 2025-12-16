@@ -1,0 +1,113 @@
+#about {
+  padding: 50px 5vw;
+  background-color: #1A1A1A;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: red;
+}
+
+.about_text h3 {
+  font-size: 32px;
+  color: red;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+
+.about_details {
+    display: flex;
+    justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.5rem;
+  width: 400px;
+  border-radius: 15px;
+  border: 2px solid red;
+    box-shadow: 0 8px 30px rgba(110, 12, 12, 0.5);
+}
+
+.detail_label {
+  font-weight: 600;
+  color: red;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+.detail_value{
+    font-size: 20px;
+}
+
+.additional_info {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 1rem;
+}
+
+.additional_info.show {
+  max-height: 1000px;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+
+.additional_info p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills h4 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.skills li::before {
+  content: '🌹';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle_button{
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    background-color: red;
+    width: 250px;
+    padding: 15px 10px;
+    margin: 10px auto;
+    border: none;
+}
+.toggle_button:hover{
+    box-shadow: 0 8px 30px rgba(110, 12, 12, 0.5);
+}
+.toggle_button span{
+    margin-left: 5px;
+}
